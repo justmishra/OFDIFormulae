@@ -1,0 +1,1 @@
+CASE WHEN "HCM - Workforce Core"."Time"."Month Number" >3 THEN Year("HCM - Workforce Core"."Time"."Month Start Date")+1 ELSE Year("HCM - Workforce Core"."Time"."Month Start Date") END 
