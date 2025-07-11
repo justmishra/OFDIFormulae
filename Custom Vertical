@@ -1,0 +1,23 @@
+CASE 
+WHEN "HCM - Workforce Core"."Legal Employer"."Legal Employer Name" in ('AGR Operations Manila Inc')
+then 'Personiv Manila'
+
+WHEN "HCM - Workforce Core"."Legal Employer"."Legal Employer Name" in ('Personiv Contact Centers India Private Limited')
+then 'Personiv Gurugram'
+
+WHEN "HCM - Workforce Core"."Legal Employer"."Legal Employer Name" in ('AG Resources (India) Private Limited')
+then 'Personiv Coimbatore'
+
+WHEN "HCM - Workforce Core"."Legal Employer"."Legal Employer Name" in ('CLX Europe SPA','CLX Europe Media Solutions GmbH','CLX Europe Media Solutions Limited')
+then 'CLX'
+
+
+
+WHEN "HCM - Workforce Core"."Legal Employer"."Legal Employer Name" in ('eClerx LLC','eClerx Limited','eClerx Private Limited','eClerx Pty Limited','eClerx Canada Limited','eClerx BV')
+then 'Onshore'
+
+
+Else "HCM - Workforce Core"."DFF - Assignment"."PER_ASG_VERTICAL_"
+
+
+END
