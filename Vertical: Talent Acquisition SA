@@ -1,0 +1,8 @@
+CASE
+  WHEN "HCM - Talent Acquisition"."Job Offer - Assignment Details"."Department Name" LIKE '%_Shared Services_%' THEN 'Shared Services'
+  WHEN "HCM - Talent Acquisition"."Job Offer - Assignment Details"."Department Name" LIKE '%_Financial Markets_%' THEN 'Financial Markets'
+  WHEN "HCM - Talent Acquisition"."Job Offer - Assignment Details"."Department Name" LIKE '%_Digital_%'   THEN 'Digital'
+  WHEN "HCM - Talent Acquisition"."Job Offer - Assignment Details"."Department Name" LIKE '%_Technology Services_%' THEN 'Technology Services'
+  WHEN "HCM - Talent Acquisition"."Job Offer - Assignment Details"."Department Name" LIKE '%_Customer Operations_%' THEN 'Customer Operations'
+  ELSE 'NA'
+END
