@@ -1,0 +1,12 @@
+CASE
+  WHEN EXTRACT(YEAR FROM 
+         "HCM - Workforce Core"."Assignment Information"."Assignment End Date"
+       ) = 4712
+  THEN
+    CAST(NULL AS DATE)
+  ELSE
+    CAST(
+      "HCM - Workforce Core"."Assignment Information"."Assignment End Date"
+      AS DATE
+    )
+END
