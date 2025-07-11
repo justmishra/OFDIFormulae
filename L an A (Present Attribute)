@@ -1,0 +1,12 @@
+(CASE 
+  WHEN "HCM - Workforce Time and Labor Management"."Facts - Processed Time Cards"."Processed Hours" >= 7 THEN 'P'
+  WHEN "HCM - Workforce Time and Labor Management"."Facts - Processed Time Cards"."Processed Hours" + 
+       (CASE 
+          WHEN "HCM - Workforce Time and Labor Management"."Processed Time Entry Details"."Payroll Time Type" = 'WFHECLXIN' 
+          THEN 7 
+          ELSE 0 
+        END) >= 7 THEN 'P'
+  WHEN "HCM - Workforce Time and Labor Management"."Absence Type"."Absence Type Name" = 'Regularization Leave WFO' THEN 'P'
+  WHEN "HCM - Workforce Time and Labor Management"."Absence Type"."Absence Type Name" = 'Regularization Leave WFH' THEN 'P'
+  ELSE 'A'
+END)
