@@ -1,0 +1,1 @@
+MOD(YEAR("HCM - Workforce Core"."Time"."Month End Date"), 4)
