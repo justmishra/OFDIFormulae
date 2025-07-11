@@ -1,0 +1,19 @@
+CASE
+WHEN "HCM - Workforce Core"."Grade"."Grade Name" in ('Retainers
+','RETAINERS','Vendor Personnel
+','VENDOR PERSONNEL')then 1
+WHEN "HCM - Workforce Core"."Grade"."Grade Name" in ('Apprentice','APPRENTICE')then 2
+WHEN "HCM - Workforce Core"."Grade"."Grade Name" in ('Analyst','ANALYST')then 3
+WHEN "HCM - Workforce Core"."Grade"."Grade Name" in ('Senior Analyst','SENIOR ANALYST')then 4
+WHEN "HCM - Workforce Core"."Grade"."Grade Name" in ('Associate Process Manager','ASSOCIATE PROCESS MANAGER')then 5
+WHEN "HCM - Workforce Core"."Grade"."Grade Name" in ('Process Manager','PROCESS MANAGER')then 6
+WHEN "HCM - Workforce Core"."Grade"."Grade Name" in ('Senior Process Manager','SENIOR PROCESS MANAGER')then 7
+WHEN "HCM - Workforce Core"."Grade"."Grade Name" in ('Associate Program Manager','ASSOCIATE PROGRAM MANAGER')then 8
+WHEN "HCM - Workforce Core"."Grade"."Grade Name" in ('Program Manager','PROGRAM MANAGER')then 9
+WHEN "HCM - Workforce Core"."Grade"."Grade Name" in ('Associate Principal','ASSOCIATE PRINCIPAL')then 10
+WHEN "HCM - Workforce Core"."Grade"."Grade Name" in ('Principal','PRINCIPAL')then 11
+WHEN "HCM - Workforce Core"."Grade"."Grade Name" in ('Managing Principal')then 12
+WHEN "HCM - Workforce Core"."Grade"."Grade Name" in ('MD and CEO')then 13
+WHEN "HCM - Workforce Core"."Grade"."Grade Name" in ('Director','DIRECTOR')then 14
+
+else "HCM - Workforce Core"."Facts - Workforce Events"."Hire Count" - "HCM - Workforce Core"."Facts - Workforce Events"."Hire Count" end
