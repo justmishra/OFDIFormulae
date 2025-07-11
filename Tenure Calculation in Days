@@ -1,0 +1,1 @@
+TIMESTAMPDIFF(SQL_TSI_DAY, "HCM - Workforce Core"."Employment Information"."Enterprise Hire Date", "HCM - Workforce Core"."Time"."Date")
