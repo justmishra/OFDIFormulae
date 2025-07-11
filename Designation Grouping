@@ -1,0 +1,12 @@
+CASE 
+  WHEN ("HCM - Workforce Core"."Grade"."Grade Name" LIKE '%Analyst' 
+        OR "HCM - Workforce Core"."Grade"."Grade Name" LIKE '%Senior Analyst') 
+    THEN 'A-SA'
+    
+  WHEN ("HCM - Workforce Core"."Grade"."Grade Name" LIKE '%Associate Process Manager' 
+        OR ("HCM - Workforce Core"."Grade"."Grade Name" LIKE '%Process Manager' 
+            AND "HCM - Workforce Core"."Grade"."Grade Name" NOT LIKE '%Senior Process Manager')) 
+    THEN 'APM-PM'
+    
+  ELSE 'SPM++'
+END
