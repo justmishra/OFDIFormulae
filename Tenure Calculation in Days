@@ -1,1 +1,3 @@
 TIMESTAMPDIFF(SQL_TSI_DAY, "HCM - Workforce Core"."Employment Information"."Enterprise Hire Date", "HCM - Workforce Core"."Time"."Date")
+First use the above formula then use the formula next to group tenure.
+CASE WHEN @calculation("TenureinDays") >= 90 THEN '90+ days' ELSE '<90 Days' END
