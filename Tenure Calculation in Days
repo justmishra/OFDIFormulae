@@ -3,4 +3,4 @@ First use the above formula then use the formula next to group tenure.
 CASE WHEN @calculation("TenureinDays") >= 90 THEN '90+ days' ELSE '<90 Days' END
 
 
-Tenure at a particular designation: TIMESTAMPDIFF(SQL_TSI_MONTH, "HCM - Workforce Core"."Assignment Information"."Assignment Start Date", "HCM - Workforce Core"."Time"."Date")
+Tenure at a particular designation: TIMESTAMPDIFF(SQL_TSI_DAY, "HCM - Workforce Core"."Assignment Information"."Assignment Start Date", "HCM - Workforce Core"."Time"."Date")
